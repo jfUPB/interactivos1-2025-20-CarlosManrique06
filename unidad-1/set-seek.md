@@ -22,4 +22,18 @@ R/ El diseño generativo es un sistema donde utilizas un programa para realizar 
 
 R/ En mis proyectos podría utilizarlo para generar nuevos ambientes que se vayan cambiando en tiempo real de acuerdo a los estímulos que está recibiendo el usuario dadod por el progama quiere que sienta o con los mismo que está sintiendo el usuario en ese momento.
 
+### Actividad 03
 
+En este sistemas físico interactivo identifica los inputs, outputs y el proceso:
+
+- Desde el microbit los inputs son los botones A, B y hacerle shake.
+
+- Desde el microbit el output son la pantalla del computador por la pag P5.
+
+- Desde el computador  el input es el boton send love.
+
+- Desde el computador el output es la pantalla del microbit
+
+ - Proceso:
+
+### Actividad 04
