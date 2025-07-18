@@ -6,7 +6,7 @@
 
 ¿Qué es un sistema físico interactivo?
 
-R/ Es un sistema en donde puedes usar los estímulos de tu alrededor con herramientas tecnologicas para hacer que la interacción que tiene el usuario logre ser más mediante el uso de los estímulos en tiempo real.
+R/ Es un sistema en donde puedes usar los estímulos de tu alrededor con herramientas tecnologicas para hacer que la interacción que tiene el usuario logre ser más inmersivo mediante el uso de los estímulos en tiempo real.
 
 ¿Cómo podrías aplicar lo que has visto en tu perfil profesional?
 
@@ -16,7 +16,7 @@ R/ podria diseñar  videojuegos o proyectos más inmersivos mediante los estimul
 
 Qué es el diseño/arte generativo?
 
-R/ Es el  diseño que se crea cuando utilizas un programa de computadora donde realizas una serie de pasos para dar como resultado un arte completo o con ciertas modificaciones
+R/ El diseño generativo es un sistema donde utilizas un programa para realizar una obra casi o completa, buscando promocionar algo a comparacion del arte generativo que lo que busca es contar y narrar la historia que quiere mostrar el autor del arte generativo donde cada resultado del producto va ser unico cada vez que el sistema de un resultado dando un factor de aleatoridad gracias a los algoritmos realizados en el sistema.
 
 ¿Cómo podrías aplicar lo que has visto en tu perfil profesional?
 
