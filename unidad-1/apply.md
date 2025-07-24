@@ -6,11 +6,6 @@
 
 Vamos a crear juntos un programa en p5.js que interactúe con un micro:bit. La idea es que el programa en p5.js muestre un cuadrado en la pantalla que cambie de color al presionar un botón del micro:bit y regrese a su color original al soltar el botón.
 
-Enlace P5
-
-[Ver sketch en p5.js](https://editor.p5js.org/CarlosManrique06/sketches/rJjoo3Ox0)
-
-
 ~~~js
 let port;
 let connectBtn;
@@ -73,6 +68,10 @@ Al ejecutar el programa muestra un botón para establecer o cerrar la conexión 
 
 
 ### Actividad 06
+
+Enlace P5
+
+[Ver sketch en p5.js](https://editor.p5js.org/CarlosManrique06/sketches/rJjoo3Ox0)
 
 Código del microbit
 
