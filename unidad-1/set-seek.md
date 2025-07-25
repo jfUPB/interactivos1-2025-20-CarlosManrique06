@@ -38,9 +38,9 @@ En este sistemas físico interactivo identifica los inputs, outputs y el proceso
 
 ### Actividad 04
 
-### Generando patrones visuales
+#### Generando patrones visuales
 
-Link del programa: (<https://editor.p5js.org/CarlosManrique06/sketches/3IdXQ2uoW>)
+Link del programa: [Programa](<https://editor.p5js.org/CarlosManrique06/sketches/3IdXQ2uoW>)
 
 ```js
 function setup() {
