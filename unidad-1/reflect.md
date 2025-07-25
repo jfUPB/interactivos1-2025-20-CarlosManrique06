@@ -53,5 +53,28 @@ R/ Como es un territorio nuevo, paso paso lo siento mejor, porque así puedo ir 
 
 Tu compañero resolvió el problema de manera diferente a ti, qué hizo diferente, qué aprendiste de su solución. En tu bitácora documenta lo anterior y escribe, como si le estuvieras explicando, lo que tú hiciste y por qué es diferente a lo que hizo tu compañero.
 
+R/ Lo que tenemos el compañero y yo es muy parecido, para mover el circulo puse que con A se moviera en el eje x  con un valor de -20 y cuando se presiona B se moviera en el eje x con u valor de +20, el color del criculo es diferente y que mi compañero trato de añadir la opcion de shake en el microbit para reañizar una accion, pero no lo termino.
+
+### Actividad 9
+
+Responde a las siguientes preguntas. Tu honestidad es el recurso más valioso para la mejora del curso.
+
+1.Continuar: ¿Qué actividad, video o ejemplo de esta unidad te resultó más inspirador o te ayudó más a entender el potencial de los sistemas físicos interactivos?
+
+R/ Un video que me resulto inspirado fue el del VJ realizando los cambios del sistema fisico interactivo en tiempo real, el vero como utlizaba sus oidos para mostrar en base a lo que sentia lo que quiere representar. y el potencial de lo que puede hacer un sistema de este tipo en tiempo real de acuerdo a lo que percibimos a nuestro alrededor.
+
+2.Dejar de hacer: ¿Hubo alguna parte que te pareció demasiado abstracta, muy rápida o confusa? ¿Hay algo que crees que podríamos cambiar para que sea más claro?
+
+R/ El funcionamiento del microbit y el p5, pero refieriendome a como el p5 recibe esa informacion y las funciones que de codigo usadas en para poder hacerlo, aveces era un poco confuso para mi entender ese funcionamiento
+
+3.Empezar a hacer: ¿Qué te genera más curiosidad ahora? ¿Te gustaría explorar más sensores del micro:bit (luz, temperatura), crear visualizaciones más complejas en p5.js o ver más ejemplos de proyectos artísticos?
+
+R/ La verdad que seria muy interesante mirar que otras caracteristicas del entorno puede percibir el microbit con los sensores para asi mismo pensar en como utilizar esas sensaciones en un producto mas compejo y ver otros proyectos también me gustaria observar para saber que más se a logrado con los sitemas interactivos
+
+4.Balance inspiración vs. técnica: ¿Cómo sentiste el equilibrio entre ver los videos inspiradores de la Actividad 01 y la parte técnica de conectar las herramientas en las actividades 03-06?
+R/ Fue un poco complejo de ver lo que se ha logrado con lo que se inicia a realizarse, pero eso es parte del proceso para llegar a lograr cosas mostradas en los videos.
+
+Comentario adicional: ¿Hay algo más que quieras compartir sobre tu experiencia en esta unidad introductoria?
+
 
 
