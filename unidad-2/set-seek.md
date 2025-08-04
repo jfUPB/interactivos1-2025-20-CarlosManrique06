@@ -92,13 +92,20 @@ Acciones: La accion es encender un led dependiendo del estado. Si el estado es i
 
 - Explica por qué decimos que este programa permite realizar de manera concurrente varias tareas.
 
-R/
+R/ Porque el programa tiene un bucle principal while true, en donde el programa revisa si ha pasado un intervalo de tiempo o si se ha realizado algun envio de informacion como presionar un boton, y realiza la accion. De esta forma, se pueden ejecutar varias tareas, ya que mientras hay un evento en espera se puede ir realizando algun otro para mientras los demas estados esperan.
 
 - Identifica los estados, eventos y acciones en el programa.
 
+Estados: Estado inicial donde se muestra una carita feliz, carita feliz activa, carita sonriente activa y carita triste activa.
+  
+Eventos: Cuando se presiona el botón A y cuando pasa cierto intervalo de tiempo.
 
+Acciones: Mostrar una de las caras en la pantalla del microbit dependiendo del estado, cambiar el estado y actualizar el temporizador.
 
 - Describe y aplica al menos 3 vectores de prueba para el programa. Para definir un vector de prueba debes llevar al sistema a un estado, generar los eventos y observar el estado siguiente y las acciones que ocurrirán. Por tanto, un vector de prueba tiene unas condiciones iniciales del sistema, unos resultados esperados y los resultados realmente obtenidos. Si el resultado obtenido es igual al esperado entonces el sistema pasó el vector de prueba, de lo contrario el sistema puede tener un error.
 
-1. si estoy en tal vector y presiono algun boton o alguna accion tiene que suceder el resultado esperado, sino es error
-2. si estoy en smile pasa un tiempo y cancelo
+1. El programa inicia en el estado init, por lo que se muestra la cara feliz. Después de 1500 ms, sin presionar ningún botón, el programa pasa automáticamente a el estado smile y muestra la cara sonriente. Se obtuvo el resultado esperado pasa la prueba.
+
+2. Desde el estado cara feliz, presiono el botón A antes de que pasen los 1500 ms. El sistema debería responder mostrando la cara triste e  iniciar un nuevo conteo de tiempo con un intervalo de 2000 ms. Se obtuvo el resultado esperado pasa la prueba.
+
+3. Desde el estado cara triste, se deja pasar el tiempo sin presionar el botón. Después de 2000 ms, el programa debe cambiar al estado feliz y mostrar nuevamente la cara feliz . Se obtuvo el resultado esperado pasa la prueba.
