@@ -69,6 +69,8 @@ while True:
                  
          if accelerometer.was_gesture('shake'):
 
+                
+             display.scroll(start_time/1000)
              music.play(music.BADDY)
              current_state = STATE_ARMED
              remaining = utime.ticks_ms()
@@ -102,6 +104,7 @@ while True:
             display.clear()
            
         
+        
 ```
 
 2. La definición de los vectores de prueba básicos que permiten verificar el correcto funcionamiento del programa.
@@ -111,5 +114,6 @@ while True:
    Vector 2: Desde el estado armed la cuenta regresiva se sigue dando mientras emite sonido y muestra una cara en la pantalla, cuando el tiemmpo sea mayor al de iniciacion que serian 10 segundos muestra una calavera y pasa al state blow. Funciono de la manera descrita, vector aprobado.
 
    Vector 3: Desde el state blow, presiono el touch del microbit y cambia al estado init emitiendo sonido. Funciono de la manera descrita, vector aprobado
+
 
 
