@@ -123,8 +123,6 @@ function keyPressed() {
   bomb.keyPressed(key);
 }
 
-
-
 ```
 
 ### Actividad 7
@@ -292,3 +290,4 @@ function keyPressed() {
 
 
 ```
+
