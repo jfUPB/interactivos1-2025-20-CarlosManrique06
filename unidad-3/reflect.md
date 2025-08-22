@@ -63,7 +63,7 @@ R/ Las diferentes versiones de la bomba, ya que muestra diferentes funcionalidad
 
 Dejar de hacer: ¿Hubo algún paso o actividad que te pareció confuso? ¿Qué cambiarías o eliminarías?
 
-R/ Al inicio me parecio confuso entender las diferentes funcionalidades de los eventos y hacer el password, pero poco a poco fui entendiendo
+R/ Al inicio me parecio confuso entender las diferentes funcionalidades de los eventos y el paso a lo practico siempre es complejo llevar la teoria y aplicarla y mas que tocaba mirar cambiar la sintaxis, que aveces generaba problemas mirar ese cambio y como poner la nueva sintaxis.
 
 Empezar a hacer: ¿Qué te habría ayudado a entender mejor?
 
@@ -73,6 +73,7 @@ R/ Tal vez separar un poco más la funcionalidades y luego unificarlas para ente
 Ritmo y dificultad: En una escala del 1 (muy fácil) al 5 (muy difícil), ¿Cómo calificarías la dificultad de pasar del análisis de un programa a diseñar y programar uno complejo? ¿Por qué?
 
 R/ 4,2. En este caso fue complejo porque siempre habia varias funcionalidades para realizar en la bomba y diferentes versiones que realizar y teniamos que cambiar la sintaxis que siempre tomaba su tiempo mirar que nos puede funcionar y que errores pueden salir en el programa.
+
 
 
 
