@@ -127,3 +127,21 @@ function mousePressed() {
 
 
 ```
+
+### Actividad 7
+
+```py
+from microbit import *
+
+while True:
+    if button_a.was_pressed():
+        uart.write("A")  
+    if button_b.was_pressed():
+        uart.write("B")  
+    if accelerometer.was_gesture("shake"):
+        uart.write("S")  
+    if pin_logo.is_touched():
+        uart.write("T")  
+
+```
+
