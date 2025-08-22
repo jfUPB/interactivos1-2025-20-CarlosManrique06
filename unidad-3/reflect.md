@@ -72,6 +72,7 @@ R/ Tal vez separar un poco más la funcionalidades y luego unificarlas para ente
 
 Ritmo y dificultad: En una escala del 1 (muy fácil) al 5 (muy difícil), ¿Cómo calificarías la dificultad de pasar del análisis de un programa a diseñar y programar uno complejo? ¿Por qué?
 
-R/ 3.8. En este caso fue complejo porque siempre habia varias funcionalidades para realizar en la bomba y diferentes versiones que realizar y teniamos que cambiar la sintaxis que siempre tomaba su tiempo mirar que nos puede funcionar y que errores pueden salir en el programa.
+R/ 4,2. En este caso fue complejo porque siempre habia varias funcionalidades para realizar en la bomba y diferentes versiones que realizar y teniamos que cambiar la sintaxis que siempre tomaba su tiempo mirar que nos puede funcionar y que errores pueden salir en el programa.
+
 
 
