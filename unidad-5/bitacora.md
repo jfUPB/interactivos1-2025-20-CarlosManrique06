@@ -192,6 +192,7 @@ microBitX: 500 microBitY: 524 microBitAState: true microBitBState: false
 
 ```
 #### Criterio 4
+
 Con framing y checksum se logra sincronización confiable, se detectan paquetes corruptos y se garantiza la integridad de la comunicación entre el microbit y el envio de datos. En cambio sin el puede generar errores de sincronizacion porque el receptor no sabe donde cortar y verificar que los datos enviados son los correctos
 
 - ¿Qué otras estrategias de framing existen además del delimitador que usamos? 
@@ -209,7 +210,8 @@ El framing por longitud resulta más eficiente porque el receptor sabe exactamen
 
 La info de lo que investigue fue sacada de: [Link Archivo](https://www.cubawiki.com.ar/images/7/72/Puntoapunto.pdf)
 
-
+- Criterio 4
+  
 Asi que en pocas palabras sobre las funcioanlidades para el empaquetado: 
 
 - El header es un byte al inicio de cada paquete que marca dónde empieza la información válida.
@@ -567,7 +569,7 @@ Checksum: Aplicado como validación
 
 Control de flujo: Hay un control con el console.log para saber si se estaban enciando los datos correctamente
 
-Hacer esta ac4 me permitió comprender que pasar de mensajes de texto a datos binarios estructurados es un salto fundamental en protocolos de comunicación para darle una mayor eficiencia al sistema al que quiero enviarle los datos y que no consuma tanta memoria tratando de traducir toda una cadena como en ASCII.
+Hacer esta act4 me permitió comprender que pasar de mensajes de texto a datos binarios estructurados es un salto fundamental en protocolos de comunicación para darle una mayor eficiencia al sistema al que quiero enviarle los datos y que no consuma tanta memoria tratando de traducir toda una cadena como en ASCII.
 
 
 #### Nota final
@@ -581,3 +583,4 @@ Hacer esta ac4 me permitió comprender que pasar de mensajes de texto a datos bi
 4. Apropiación y Articulación de Conceptos: 4.4
 
  - Nota Final: 4.65
+
