@@ -73,6 +73,7 @@ Cuando cambio la linea para enviar datos en binario:
 data = struct.pack('>2h2B', xValue, yValue, int(aState), int(bState))
 uart.write(data)
 ```
+#### Criterio 3
 
 En el serialTerminal  mostrado en la imagen de arriba se evidencias caracteres raros que son ilegibles.
 
@@ -92,6 +93,8 @@ El binario tiene la ventaja de que solo estas enviando 6 bytes en este este caso
 
 
 el ASCII es más fácil de leer e interpretar, con el salto de linea se reenvia todo al microbit si hay algun error, pero es mucho más lento haciendo que tenga menor eficiencia, ya que toca pasarlos en cadenas que suelen ser mucho más largas en bytes.
+
+
 
 #### Experimento con el gesto shake
 
@@ -142,9 +145,11 @@ Binario: mejor para transmisión eficiente en sistemas en tiempo real.
 
 ASCII: mejor para depuración, prototipado, y cuando importa la legibilidad.
 
+
+
 ### Actividad 3
 
-#### Pregunta 1
+#### Pregunta 1 (Criterio 3)
 
 Explica por qué en la unidad anterior teníamos que enviar la información delimitada y además marcada con un salto de línea y ahora no es necesario.
 
@@ -155,7 +160,7 @@ Ahora en el binario el tamaño del paquete está fijo en 6 bytes. El interpretad
 
 #### Error de lectura de datos
 
-¿Qué ves en la consola? ¿Por qué crees que se produce este error?
+#### Criterio 2 - 3
 
 Ejemplo de salida:
 ```js
@@ -166,8 +171,9 @@ microBitX: 3073 microBitY: 1 microBitAState: false microBitBState: false
 
 A veces los valores son correctos (500, 524), otras veces aparecen números que no corresponden como  (513, 3073). probablemente esto ocurre porque el receptor puede empezar a leer desde la mitad de un paquete. Como los datos binarios no tienen delimitador, va leyendo y corriendo esos dato y se interpretan bytes de dos paquetes distintos, así que probablemente sea un error de sincronizacion que no siempre coincide con los 6 bytes enviados por el microbit.
 
+#### Criterio 1:
 
-#### Framing
+#### Framing   
 
 Framing es el acto de delimitar el comienzo y fin de un mensaje. Esto se denomina framing, porque este acto crea un marco (frame) en donde el mensaje puede ser enviado y delimitado.
 
@@ -185,6 +191,7 @@ microBitX: 500 microBitY: 524 microBitAState: true microBitBState: false
 microBitX: 500 microBitY: 524 microBitAState: true microBitBState: false
 
 ```
+#### Criterio 4
 Con framing y checksum se logra sincronización confiable, se detectan paquetes corruptos y se garantiza la integridad de la comunicación entre el microbit y el envio de datos. En cambio sin el puede generar errores de sincronizacion porque el receptor no sabe donde cortar y verificar que los datos enviados son los correctos
 
 - ¿Qué otras estrategias de framing existen además del delimitador que usamos? 
@@ -201,6 +208,17 @@ El framing por longitud resulta más eficiente porque el receptor sabe exactamen
 
 
 La info de lo que investigue fue sacada de: [Link Archivo](https://www.cubawiki.com.ar/images/7/72/Puntoapunto.pdf)
+
+
+Asi que en pocas palabras sobre las funcioanlidades para el empaquetado: 
+
+- El header es un byte al inicio de cada paquete que marca dónde empieza la información válida.
+
+- El checksum es un valor calculado a partir de los datos para verificar si coinciden con los datos enviados; si no coincide en el receptor, el paquete se descarta porque llegó con errores.
+
+- El dataview  permite interpretar bytes  recibidos como números enteros y booleanos como los enviados en esta unidad, reconstruyendo así la información enviada.
+
+- El struct es un módulo que empaqueta varias variables en un bloque binario compacto y ordenado, facilitando su transmisión por el puerto serial.
 
 ### Act4
 
@@ -550,3 +568,16 @@ Checksum: Aplicado como validación
 Control de flujo: Hay un control con el console.log para saber si se estaban enciando los datos correctamente
 
 Hacer esta ac4 me permitió comprender que pasar de mensajes de texto a datos binarios estructurados es un salto fundamental en protocolos de comunicación para darle una mayor eficiencia al sistema al que quiero enviarle los datos y que no consuma tanta memoria tratando de traducir toda una cadena como en ASCII.
+
+
+#### Nota final
+
+1. Profundidad de la Indagación : 5
+
+2. Calidad de la Experimentación: 4.4
+
+3.  Análisis y Reflexión: 4.8
+
+4. Apropiación y Articulación de Conceptos: 4.4
+
+ - Nota Final: 4.65
