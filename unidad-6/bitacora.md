@@ -12,8 +12,6 @@ Para iniciar las pag se usa el npm install y luego npm start para correr las pag
 
 ¿Qué ocurrió en la terminal cuando ejecutaste npm install? ¿Cuál crees que es su propósito?
 
-R/
-
 ```bash
 B09S113est@N00023578 MINGW64 ~/entangledTest-sfi1-2025-20 (main)
 $ npm install
@@ -129,3 +127,40 @@ Porque permite que todo el ciclo de una aplicación web, tanto lo que ocurre en 
 - Resume con tus propias palabras la diferencia fundamental entre una comunicación HTTP tradicional y una comunicación usando WebSockets/Socket.IO. ¿En qué tipo de aplicaciones has visto o podrías imaginar que se usa esta comunicación en tiempo real?
 
 La comunicación HTTP tradicional funciona bajo el esquema pregunta y respuesta, donde el cliente siempre inicia la petición y el servidor solo responde. En cambio, con WebSockets/Socket.IO se abre un canal de comunicación en tiempo real, lo que permite que tanto el cliente como el servidor envíen información de manera continua sin necesidad de estar pidiendo todo el tiempo. Esto es ideal para aplicaciones como chats en línea, videojuegos multijugador y notificaciones instantáneas.
+
+### Actividad 3
+
+#### Experimento 1
+
+<img width="985" height="686" alt="image" src="https://github.com/user-attachments/assets/9fd4b5ba-1a0b-49af-870a-436ceab28cb2" />
+
+¿Qué te dice esto sobre cómo el servidor asocia URLs con respuestas? 
+
+R/ Esto demuestra que el servidor solo responde a las URLs que tú defines con app.get(). Si cambias la ruta, solo esa nueva URL funcionará cuando reinicies el servidor.
+
+
+#### Experimento 2
+
+- Conectado al servidor (ID)
+
+Page1: A user connected - ID: hqUVJnyF_DdftLn0AAAB
+
+Page2: A user connected - ID: zexBLvCkSIiNAOMZAAAD
+
+- Desconectado del servidor (ID)
+
+Page1: User disconnected - ID: hqUVJnyF_DdftLn0AAAB
+
+Page2: User disconnected - ID: zexBLvCkSIiNAOMZAAAD
+
+-  El ID de cada pagina coincide tanto cuando se conecta al servidor y cuando se desconecta.
+
+En conclusión, cada vez que un cliente  se conecta al servidor, el servidor le asigna un ID único. Cuando se cierra la pestaña, el servidor detecta la desconexión y muestra el mismo ID. Así, el servidor puede identificar y gestionar cada cliente de forma individual. 
+
+#### Experimento 3
+
+
+<img width="578" height="177" alt="image" src="https://github.com/user-attachments/assets/94e87b84-fe0e-415a-af52-751b7b15669d" />
+
+
+Cuando muevo page1 aparece win1update y cuando muevo page2 aparece win2update, en ambos casos se registra x, y , altura y ancho.
