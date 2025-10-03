@@ -1,7 +1,7 @@
 
 # Evidencias de la unidad 6
 
-<a id="actividad 1"></a>
+<a id="actividad1"></a>
 ### Actividad 1
 
 <img width="576" height="362" alt="ClonarRepositoria" src="https://github.com/user-attachments/assets/31df172c-5a7b-43e6-a32e-27e43191bad4" />
@@ -53,6 +53,7 @@ R/ <img width="1663" height="827" alt="Pagfuncional" src="https://github.com/use
 
 Los circulos estan enlazados y cada vez que mueves una pestaña ese enlace va adaptandose al cambio de posiciones y entre más se acerquen entre si los círculos, las paginas se juntan y visualmente es como si ambos círculos estuvieran en la misma página.
 
+<a id="actividad2"></a>
 ### Actividad 2
 
 #### Pregunta 1
@@ -132,6 +133,7 @@ Porque permite que todo el ciclo de una aplicación web, tanto lo que ocurre en 
 
 La comunicación HTTP tradicional funciona bajo el esquema pregunta y respuesta, donde el cliente siempre inicia la petición y el servidor solo responde. En cambio, con WebSockets/Socket.IO se abre un canal de comunicación en tiempo real, lo que permite que tanto el cliente como el servidor envíen información de manera continua sin necesidad de estar pidiendo todo el tiempo. Esto es ideal para aplicaciones como chats en línea, videojuegos multijugador y notificaciones instantáneas.
 
+<a id="actividad3"></a>
 ### Actividad 3
 
 #### Experimento 1
@@ -197,6 +199,7 @@ socket.emit envía el mensaje únicamente al cliente que originó el evento, que
   La variable port, lo que hace es definir en que puerto se escucha el servidor y listen se encarga de que el servidor solo funcione en ese puerto.
 
 
+<a id="actividad4"></a>
   ### Actividad 4
 
 #### Experimento 1
@@ -324,6 +327,7 @@ Resultados:
 
 Nota Final: 3
 
-Esta nota principalemente es debido a que me falto el apply, pero realice las 4 actividades completas 
+Esta nota principalemente es debido a que me falto el apply, pero realice las 4 actividades completas, adjunto el ancla de las debidas actividades:
 
-ir a: [Actividad 1](#actividad1)
+ir a: [Actividad 1](#actividad1),  [Actividad 2](#actividad2),  [Actividad 3](#actividad3),  [Actividad 4](#actividad4)
+
