@@ -77,3 +77,15 @@ R/ 4,2. En este caso fue complejo porque siempre habia varias funcionalidades pa
 
 
 
+### Correcion Set-Seek
+
+#### Diagrama de la bomba
+
+![Diagrama_Bomba](https://github.com/user-attachments/assets/9a2e19b1-5fbb-4584-a27e-432e686d24d1)
+
+
+#### Tabla de vectores
+
+
+<img width="694" height="855" alt="image" src="https://github.com/user-attachments/assets/a564201d-2e8f-433b-974b-1a4508ae0f41" />
+
