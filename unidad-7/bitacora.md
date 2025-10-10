@@ -4,21 +4,30 @@
 
 ### Actividad 1
 
-¿Qué URL de Dev Tunnels obtuviste? ¿Por qué crees que necesitamos usar esta URL en lugar de http://localhost:3000 o la IP local de tu computador para que el celular se conecte?
+- ¿Qué URL de Dev Tunnels obtuviste? ¿Por qué crees que necesitamos usar esta URL en lugar de http://localhost:3000 o la IP local de tu computador para que el celular se conecte?
 
-R/
+R/ Obtuve https://3ncnsvph-3000.use2.devtunnels.ms/. Porque localhost  solo existe dentro de cada dispositivo,  si escribiera http://localhost:3000 en el celular, este buscaría el servidor dentro del propio celular, no en un servidor y eso solo funciona si ambos dispositivos están conectados a la misma red Wifi. En cambio, la URL de Dev Tunnels es pública y accesible , porque el servicio crea un túnel seguro desde esa dirección hacia el puerto 3000 del computador. De esta forma, cualquier dispositivopuede conectarse al servidor local.
 
-Describe brevemente qué hace npm install y npm start.
+- Describe brevemente qué hace npm install y npm start.
 
 R/ npm install, lo que hace es instalar todos los paquetes y dependencias para que el programa funcione correctamente y npm start inicializa el servidor y escucha en el mismo dispositivo en localhost:3000 para abrir el servidor.
 
+<img width="567" height="256" alt="image" src="https://github.com/user-attachments/assets/8cea86fd-571b-48bb-8195-4d3c0c105d27" />
+
+
 ¿Qué mensajes observaste en la terminal del servidor al conectar el cliente de escritorio y el cliente móvil? ¿Eran diferentes los mensajes o identificadores?
 
-R/
+R/ Observe un 2 mensajes de new client connected, pero los mensajes tanto para el cliente escritorio y cliente móvil eran iguales, otro mensaje que salia era que se recibio un nuevo mensaje de tipo touch que recive coordenadas en x y coordendas en y del cliente móvil a donde el usuario está tocando para que el círculo cambia de posicion.
+
+<img width="625" height="122" alt="image" src="https://github.com/user-attachments/assets/9b68b176-4274-46e8-a50a-659415668c13" />
+
 
 Describe el comportamiento observado: ¿Funcionó la interacción? ¿Hubo algún retraso (latencia)?
 
-R/
+<img width="311" height="408" alt="image" src="https://github.com/user-attachments/assets/9f470d0b-6597-4979-9235-09eb55b620ac" />
+
+
+R/ La interacción funciono de forma correcta, cada vez que tocaba la pantalla y movía el dedo el círculo se iba moviendo. Sin embargo, si se notaba el retraso de como el círculo se movía cuando hacia el touch en otro lado, se demoraba un poco el círculo en cambiar de posición, probablemente se deba principalmente a que la conexión entre el celular y el servidor no es directa, sino que pasa a través del túnel, provocando que los datos enviados pasen por el intermediario y se demoran un poco más en llegar.
 
 
 ### Actividad 2
@@ -42,4 +51,30 @@ Por otro lado, usar la IP local es más rápido porque la comunicación ocurre d
 
 - Coloca en tu bitácora capturas de pantalla del sistema completo funcionando. Esto lo puedes hacer abriendo tanto el mobile como el desktop en tu computador y tomando una captura de pantalla de todos los involucrados (celular, computador y terminal)
 
+<img width="1522" height="755" alt="image" src="https://github.com/user-attachments/assets/7e1afca2-9592-483b-9b38-ece3dc9e3bde" />
+
+
+En la imagen se evidencia el cliente del celular, computador y la terminal con los diferentes datos.
+
+
+### Actividad 3
+
+- ¿Cuál es la función principal de express.static(‘public’) en este servidor? ¿Cómo se compara con el uso de app.get(‘/ruta’, …) del servidor de la Unidad 6?
+
+  R/ La función express.static('public') le indica a Express que automáticamentee cuando un cliente accede a la raíz del servidor http://localhost:3000, Express busca y entrega el archivo index.html y demás recursos directamente sin que tengamos que definir rutas manualmente como en la U6, ya que en la U6  con el .get pediamos manualmente esa ruta y se respondís manualmente a cada solicitud HTTP.
+
+- Explica detalladamente el flujo de un mensaje táctil: ¿Qué evento lo envía desde el móvil? ¿Qué evento lo recibe el servidor? ¿Qué hace el servidor con él? ¿Qué evento lo envía el servidor al escritorio? ¿Por qué se usa socket.broadcast.emit en lugar de io.emit o socket.emit en este caso?
+
 R/
+
+- Si conectaras dos computadores de escritorio y un móvil a este servidor, y movieras el dedo en el móvil, ¿Quién recibiría el mensaje retransmitido por el servidor? ¿Por qué?
+
+
+R/ Si el móvil enviara los mismos datos del touch, el servidor los recibe y usa socket.broadcast.emit para reenviarlo como intermediario, haciendo que todos los demás clientes conectados recibirían el mensaje, quitando el propio emisor original.
+
+- ¿Qué información útil te proporcionan los mensajes console.log en el servidor durante la ejecución?
+
+R/ Los mensajes console.log en el servidor sirven como registro de actividad en tiempo real. Permiten saber: Cuándo un nuevo cliente se conecta, los datos que están siendo recibidos, cuando un cliente se desconecta y cuando el servidor escucha al port 3000. Esta información sirve para comprobar el funcionamiento del programa, ya sea para depurar errores, verificar la comunicación entre clientes y servidor, y confirmar que los eventos de conexión, envío y desconexión están ocurriendo correctamente.
+
+
+### Actividad 4
