@@ -61,12 +61,11 @@ En la imagen se evidencia el cliente del celular, computador y la terminal con l
 
 - ¿Cuál es la función principal de express.static(‘public’) en este servidor? ¿Cómo se compara con el uso de app.get(‘/ruta’, …) del servidor de la Unidad 6?
 
-  R/ La función express.static('public') le indica a Express que automáticamentee cuando un cliente accede a la raíz del servidor http://localhost:3000, Express busca y entrega el archivo index.html y demás recursos directamente sin que tengamos que definir rutas manualmente como en la U6, ya que en la U6  con el .get pediamos manualmente esa ruta y se respondís manualmente a cada solicitud HTTP.
+  R/ La función express.static('public') le indica a Express que automáticamentee cuando un cliente accede a la raíz del servidor http://localhost:3000, Express busca y entrega el archivo index.html y demás recursos directamente sin que tengamos que definir rutas manualmente como en la U6, ya que en la U6  con el .get pediamos manualmente esa ruta y se respondía manualmente a cada solicitud HTTP.
 
 - Explica detalladamente el flujo de un mensaje táctil: ¿Qué evento lo envía desde el móvil? ¿Qué evento lo recibe el servidor? ¿Qué hace el servidor con él? ¿Qué evento lo envía el servidor al escritorio? ¿Por qué se usa socket.broadcast.emit en lugar de io.emit o socket.emit en este caso?
 
-R/
-
+R/ 
 - Si conectaras dos computadores de escritorio y un móvil a este servidor, y movieras el dedo en el móvil, ¿Quién recibiría el mensaje retransmitido por el servidor? ¿Por qué?
 
 R/ Si el móvil enviara los mismos datos del touch, el servidor los recibe y usa socket.broadcast.emit para reenviarlo como intermediario, haciendo que todos los demás clientes conectados recibirían el mensaje, quitando el propio emisor original.
@@ -78,3 +77,4 @@ R/ Los mensajes console.log en el servidor sirven como registro de actividad en 
 
 ### Actividad 4
 - Realiza un diagrama donde muestres el flujo completo de datos y eventos entre los tres componentes: móvil, servidor y escritorio. Puedes ilustrar con un ejemplo de coordenadas táctiles (x, y) y cómo viajan a través del sistema.
+
