@@ -6,7 +6,7 @@
 
 - ¿Qué URL de Dev Tunnels obtuviste? ¿Por qué crees que necesitamos usar esta URL en lugar de http://localhost:3000 o la IP local de tu computador para que el celular se conecte?
 
-R/ Obtuve https://3ncnsvph-3000.use2.devtunnels.ms/. Porque localhost  solo existe dentro de cada dispositivo,  si escribiera http://localhost:3000 en el celular, este buscaría el servidor dentro del propio celular, no en un servidor y eso solo funciona si ambos dispositivos están conectados a la misma red Wifi. En cambio, la URL de Dev Tunnels es pública y accesible , porque el servicio crea un túnel seguro desde esa dirección hacia el puerto 3000 del computador. De esta forma, cualquier dispositivopuede conectarse al servidor local.
+R/ Obtuve https://3ncnsvph-3000.use2.devtunnels.ms/. Porque localhost  solo existe dentro de cada dispositivo,  si escribiera http://localhost:3000 en el celular, este buscaría el servidor dentro del propio celular, no en un servidor y eso solo funciona si ambos dispositivos están conectados a la misma red Wifi. En cambio, la URL de Dev Tunnels es pública y accesible , porque el servicio crea un túnel seguro desde esa dirección hacia el puerto 3000 del computador. De esta forma, cualquier dispositivo puede conectarse al servidor local.
 
 - Describe brevemente qué hace npm install y npm start.
 
@@ -17,7 +17,7 @@ R/ npm install, lo que hace es instalar todos los paquetes y dependencias para q
 
 ¿Qué mensajes observaste en la terminal del servidor al conectar el cliente de escritorio y el cliente móvil? ¿Eran diferentes los mensajes o identificadores?
 
-R/ Observe un 2 mensajes de new client connected, pero los mensajes tanto para el cliente escritorio y cliente móvil eran iguales, otro mensaje que salia era que se recibio un nuevo mensaje de tipo touch que recive coordenadas en x y coordendas en y del cliente móvil a donde el usuario está tocando para que el círculo cambia de posicion.
+R/ Observe un 2 mensajes de new client connected, pero los mensajes tanto para el cliente escritorio y cliente móvil eran iguales, otro mensaje que salia era que se recibio un nuevo mensaje de tipo touch que recibe coordenadas en x y coordendas en y del cliente móvil a donde el usuario está tocando para que el círculo cambia de posicion.
 
 <img width="625" height="122" alt="image" src="https://github.com/user-attachments/assets/9b68b176-4274-46e8-a50a-659415668c13" />
 
@@ -45,7 +45,7 @@ R/ La función touchMoved() en p5.js se ejecuta automáticamente cada vez que el
 
 - Compara brevemente Dev Tunnels con simplemente usar la IP local. ¿Cuáles son las ventajas y desventajas de cada uno?
 
-R/  Dev Tunnels permite que la aplicación sea accesible desde cualquier lugar, ya que crea un enlace público que reenvía las conexiones directamente al servidor local. Además, no requiere configuraciones adicionales como abrir puertos , lo que lo hace muy práctico para pruebas remotas como se había comentado en clase. Su única desventaja es que puede ser un poco más lento debido al reenvío de datos a través del túnel.
+R/ Dev Tunnels permite que la aplicación sea accesible desde cualquier lugar, ya que crea un enlace público que reenvía las conexiones directamente al servidor local. Además, no requiere configuraciones adicionales como abrir puertos , lo que lo hace muy práctico para pruebas remotas como se había comentado en clase. Su única desventaja es que puede ser un poco más lento debido al reenvío de datos a través del túnel.
 
 Por otro lado, usar la IP local es más rápido porque la comunicación ocurre dentro de la misma red y dispositivo, sin intermediarios. Sin embargo, solo funciona si ambos dispositivos están conectados a la misma red y no. Además, no ofrece un acceso público y puede ser menos seguro si se exponen los puertos del equipo.
 
@@ -69,7 +69,6 @@ R/
 
 - Si conectaras dos computadores de escritorio y un móvil a este servidor, y movieras el dedo en el móvil, ¿Quién recibiría el mensaje retransmitido por el servidor? ¿Por qué?
 
-
 R/ Si el móvil enviara los mismos datos del touch, el servidor los recibe y usa socket.broadcast.emit para reenviarlo como intermediario, haciendo que todos los demás clientes conectados recibirían el mensaje, quitando el propio emisor original.
 
 - ¿Qué información útil te proporcionan los mensajes console.log en el servidor durante la ejecución?
@@ -78,3 +77,4 @@ R/ Los mensajes console.log en el servidor sirven como registro de actividad en 
 
 
 ### Actividad 4
+- Realiza un diagrama donde muestres el flujo completo de datos y eventos entre los tres componentes: móvil, servidor y escritorio. Puedes ilustrar con un ejemplo de coordenadas táctiles (x, y) y cómo viajan a través del sistema.
