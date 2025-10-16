@@ -86,3 +86,5 @@ R/ Los mensajes console.log en el servidor sirven como registro de actividad en 
 - Realiza un diagrama donde muestres el flujo completo de datos y eventos entre los tres componentes: móvil, servidor y escritorio. Puedes ilustrar con un ejemplo de coordenadas táctiles (x, y) y cómo viajan a través del sistema.
 
 
+![Diagrama Servidor](https://github.com/user-attachments/assets/f89f4815-8d36-4a4a-b420-bf2ce849b63d)
+
