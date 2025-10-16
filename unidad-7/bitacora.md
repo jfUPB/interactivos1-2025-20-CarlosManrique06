@@ -65,7 +65,13 @@ En la imagen se evidencia el cliente del celular, computador y la terminal con l
 
 - Explica detalladamente el flujo de un mensaje táctil: ¿Qué evento lo envía desde el móvil? ¿Qué evento lo recibe el servidor? ¿Qué hace el servidor con él? ¿Qué evento lo envía el servidor al escritorio? ¿Por qué se usa socket.broadcast.emit en lugar de io.emit o socket.emit en este caso?
 
-R/ 
+R/ En el móvil, el evento touchMoved() se activa cuando el usuario mueve el dedo sobre la pantalla. Cada vez que pasa este evento, el cliente envía un mensaje al servidor usando socket.emit('message', datos), donde incluye las coordenadas actuales del toque (mouseX, mouseY). En el servidor, la línea socket.on('message', (message) escucha los mensajes que llegan. Cuando recibe uno, lo muestra en la consola y se prepara para reenviarlo a los demás clientes conectados, luego los clientes como computador tienen un socket.on('message') que escucha los mensajes reenviados por el servidor. Cuando los reciben, actualizan su interfaz, por ejemplo dibujando la nueva posición del círculo en el canvas.
+
+
+En este caso se usa socket.emit porque envía el mensaje solo al cliente que lo generó y evita duplicar el movimiento en el celular cuando ya se conoce la posicion. Así, solo los otros dispositivos reciben la actualización; Por otro lado, io.emit lo envía a todos los clientes, incluido el emisor y socket.broadcast.emit lo envía a todos menos al emisor.
+
+
+
 - Si conectaras dos computadores de escritorio y un móvil a este servidor, y movieras el dedo en el móvil, ¿Quién recibiría el mensaje retransmitido por el servidor? ¿Por qué?
 
 R/ Si el móvil enviara los mismos datos del touch, el servidor los recibe y usa socket.broadcast.emit para reenviarlo como intermediario, haciendo que todos los demás clientes conectados recibirían el mensaje, quitando el propio emisor original.
@@ -76,5 +82,7 @@ R/ Los mensajes console.log en el servidor sirven como registro de actividad en 
 
 
 ### Actividad 4
+
 - Realiza un diagrama donde muestres el flujo completo de datos y eventos entre los tres componentes: móvil, servidor y escritorio. Puedes ilustrar con un ejemplo de coordenadas táctiles (x, y) y cómo viajan a través del sistema.
+
 
