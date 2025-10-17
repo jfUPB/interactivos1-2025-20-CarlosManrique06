@@ -1,7 +1,7 @@
 
 # Evidencias de la unidad 7
 
-
+<a id="actividad1"></a>
 ### Actividad 1
 
 - ¿Qué URL de Dev Tunnels obtuviste? ¿Por qué crees que necesitamos usar esta URL en lugar de http://localhost:3000 o la IP local de tu computador para que el celular se conecte?
@@ -29,7 +29,7 @@ Describe el comportamiento observado: ¿Funcionó la interacción? ¿Hubo algún
 
 R/ La interacción funciono de forma correcta, cada vez que tocaba la pantalla y movía el dedo el círculo se iba moviendo. Sin embargo, si se notaba el retraso de como el círculo se movía cuando hacia el touch en otro lado, se demoraba un poco el círculo en cambiar de posición, probablemente se deba principalmente a que la conexión entre el celular y el servidor no es directa, sino que pasa a través del túnel, provocando que los datos enviados pasen por el intermediario y se demoran un poco más en llegar.
 
-
+<a id="actividad2"></a>
 ### Actividad 2
 
 - Explica con tus propias palabras: ¿Por qué es necesario Dev Tunnels en este escenario y cómo funciona conceptualmente?
@@ -56,7 +56,7 @@ Por otro lado, usar la IP local es más rápido porque la comunicación ocurre d
 
 En la imagen se evidencia el cliente del celular, computador y la terminal con los diferentes datos.
 
-
+<a id="actividad3"></a>
 ### Actividad 3
 
 - ¿Cuál es la función principal de express.static(‘public’) en este servidor? ¿Cómo se compara con el uso de app.get(‘/ruta’, …) del servidor de la Unidad 6?
@@ -80,7 +80,7 @@ R/ Si el móvil enviara los mismos datos del touch, el servidor los recibe y usa
 
 R/ Los mensajes console.log en el servidor sirven como registro de actividad en tiempo real. Permiten saber: Cuándo un nuevo cliente se conecta, los datos que están siendo recibidos, cuando un cliente se desconecta y cuando el servidor escucha al port 3000. Esta información sirve para comprobar el funcionamiento del programa, ya sea para depurar errores, verificar la comunicación entre clientes y servidor, y confirmar que los eventos de conexión, envío y desconexión están ocurriendo correctamente.
 
-
+<a id="actividad4"></a>
 ### Actividad 4
 
 - Realiza un diagrama donde muestres el flujo completo de datos y eventos entre los tres componentes: móvil, servidor y escritorio. Puedes ilustrar con un ejemplo de coordenadas táctiles (x, y) y cómo viajan a través del sistema.
@@ -88,11 +88,13 @@ R/ Los mensajes console.log en el servidor sirven como registro de actividad en 
 
 ![Diagrama Servidor](https://github.com/user-attachments/assets/f89f4815-8d36-4a4a-b420-bf2ce849b63d)
 
-
+<a id="actividad5"></a>
 ### Actividad 5-Apply
 
 #### Diseña una aplicación interactiva que use el touch del móvil para controlar una visuales de tema musical de tu elección. Las visuales correrán en una aplicación de escritorio (desktop). Recuerda que ambas aplicaciones las construirás usando p5.js y utilizando el servidor Node.js como puente.
 
+
+Como canción  elegí Silver Line de First Aid Kit. Con el ritmo y letra de la cancion se me vino la idea crear una experiencia visual que evocara el viaje y el paso del tiempo. Me imagine una carretera solitaria atravesando un desierto, rodeada de cactus, montañas y las rodaderas que se mueven con el viento. Busque que las visuales reaccionan a las vibraciones de la música para darle más dinamismo a las visuales y que con el touch se pudieran acercar o alejar las montañas y cambiar la hora del día, haciendo que el cielo transite entre el día con el sol  y la noche  por la luna. Esta interacción busca representar el viaje emocional que transmite la canción, sobre el camino por el que vamos día y noche creando.
 
 - Implementa tu diseño. Puedes usar IA generativa para ayudarte a escribir el código, pero primero debes hacer el diseño de lo que quieres.
 
@@ -546,5 +548,13 @@ function windowResized() {
 }
 
 ```
+
+### Auto-Evaluacion
+
+Nota Final: 5
+
+ Realice las 4 actividades completas del set and seek y terminé el apply completo; Adjunto el ancla de las debidas actividades:
+
+ir a: [Actividad 1](#actividad1),  [Actividad 2](#actividad2),  [Actividad 3](#actividad3),  [Actividad 4](#actividad4), [Actividad 5](#actividad5)
 
 
