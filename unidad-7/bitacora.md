@@ -91,7 +91,7 @@ R/ Los mensajes console.log en el servidor sirven como registro de actividad en 
 <a id="actividad5"></a>
 ### Actividad 5-Apply
 
-#### Diseña una aplicación interactiva que use el touch del móvil para controlar una visuales de tema musical de tu elección. Las visuales correrán en una aplicación de escritorio (desktop). Recuerda que ambas aplicaciones las construirás usando p5.js y utilizando el servidor Node.js como puente.
+-  Diseña una aplicación interactiva que use el touch del móvil para controlar una visuales de tema musical de tu elección. Las visuales correrán en una aplicación de escritorio (desktop). Recuerda que ambas aplicaciones las construirás usando p5.js y utilizando el servidor Node.js como puente.
 
 
 Como canción  elegí Silver Line de First Aid Kit. Con el ritmo y letra de la cancion se me vino la idea crear una experiencia visual que evocara el viaje y el paso del tiempo. Me imagine una carretera solitaria atravesando un desierto, rodeada de cactus, montañas y las rodaderas que se mueven con el viento. Busque que las visuales reaccionan a las vibraciones de la música para darle más dinamismo a las visuales y que con el touch se pudieran acercar o alejar las montañas y cambiar la hora del día, haciendo que el cielo transite entre el día con el sol  y la noche  por la luna. Esta interacción busca representar el viaje emocional que transmite la canción, sobre el camino por el que vamos día y noche creando.
@@ -556,5 +556,6 @@ Nota Final: 5
  Realice las 4 actividades completas del set and seek y terminé el apply completo; Adjunto el ancla de las debidas actividades:
 
 ir a: [Actividad 1](#actividad1),  [Actividad 2](#actividad2),  [Actividad 3](#actividad3),  [Actividad 4](#actividad4), [Actividad 5](#actividad5)
+
 
 
